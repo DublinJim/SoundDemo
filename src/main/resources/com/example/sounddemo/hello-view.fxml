@@ -18,7 +18,7 @@
       <padding>
          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
       </padding>
-      <ComboBox fx:id="combo1" prefWidth="150.0"/>
-      <ComboBox fx:id="combo2" prefWidth="150.0"/>
+
+
    </VBox>
 </AnchorPane>

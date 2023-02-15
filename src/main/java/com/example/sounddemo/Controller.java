@@ -27,18 +27,20 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        String[] fruits = {"Option 1", "Option 2", "option 3"};
+        String[] fruits = {"Option 1", "Option 2", "Option 3"};
 
 
         String[] week_days =
-                {"Monday", "Tuesday", "Wednesday",
+                {"Select Day","Monday", "Tuesday", "Wednesday",
                         "Thursday", "Friday"};
 
         // Create a combo box
         ComboBox combo_box = new ComboBox(FXCollections.observableArrayList(week_days));
-
-
+combo_box.getSelectionModel().select(week_days[0]);
         rootPane.getChildren().add(combo_box);
+        combo2 =new ComboBox<>(FXCollections.observableArrayList(fruits));
+        vBox.getChildren().add(combo2);
+        combo2.getSelectionModel().select(fruits[0]);
     }
 
 }
