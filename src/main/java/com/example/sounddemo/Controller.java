@@ -52,12 +52,14 @@ public class Controller implements Initializable {
 
         //set up the buttons
         btn1.setText("Options");
-        btn1.setPrefWidth(70);
+        btn1.setPrefWidth(100);
         btn1.setOnAction(e -> getOutputCombo2());
 
         btn2.setText("Day");
-        btn2.setPrefWidth(70);
+        btn2.setPrefWidth(100);
         btn2.setOnAction(e -> getOutputCombo1());
+
+
 
 
     }

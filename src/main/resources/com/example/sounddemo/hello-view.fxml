@@ -10,7 +10,7 @@
 <AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sounddemo.Controller">
    <Button fx:id="btn1" layoutX="41.0" layoutY="40.0" mnemonicParsing="false" text="Button" />
 
-   <Button fx:id="btn2" layoutX="121.0" layoutY="40.0" mnemonicParsing="false" text="Button" />
+   <Button fx:id="btn2" layoutX="167.0" layoutY="40.0" mnemonicParsing="false" text="Button" />
    <VBox fx:id="vBox" layoutX="387.0" layoutY="22.0" prefHeight="350.0" prefWidth="167.0" spacing="10.0">
       <padding>
          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
