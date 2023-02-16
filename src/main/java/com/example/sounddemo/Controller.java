@@ -2,6 +2,7 @@ package com.example.sounddemo;
 
 import javafx.collections.FXCollections;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -45,6 +46,8 @@ public class Controller implements Initializable {
         //set the default text
         comboBox1.setPromptText("Days");
         comboBox2.setPromptText("Options");
+        comboBox1.setPrefWidth(100);
+        comboBox2.setPrefWidth(100);
 
         //blank the text blocks
         txtOutput2.setText(null);
@@ -69,6 +72,8 @@ public class Controller implements Initializable {
         lbl1.setFont(franklin_gothic);
 
         //add to the Vbox and root
+
+        vBox.setAlignment(Pos.TOP_CENTER);
         vBox.getChildren().add(comboBox2);
         vBox.getChildren().add(comboBox1);
         rootPane.getChildren().add(lbl1);
