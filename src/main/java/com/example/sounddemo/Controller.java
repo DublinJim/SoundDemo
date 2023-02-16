@@ -16,8 +16,7 @@ public class Controller implements Initializable {
 
 
     public Button btn1;
-    public Button btn4;
-    public Button btn3;
+
     public Button btn2;
 
     public ComboBox<String> comboBox2;
@@ -32,7 +31,7 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        //create the arrays for choices
         fruits = new String[]{"Option 1", "Option 2", "Option 3"};
         week_days = new String[]{"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
 
@@ -40,14 +39,24 @@ public class Controller implements Initializable {
         comboBox1 = new ComboBox<>(FXCollections.observableArrayList(week_days));
         comboBox2 = new ComboBox<>(FXCollections.observableArrayList(fruits));
 
+        //set the default text
         comboBox1.setPromptText("Days");
         comboBox2.setPromptText("Options");
 
+        //add to the Vbox
         vBox.getChildren().add(comboBox2);
         vBox.getChildren().add(comboBox1);
 
+        //blank the second text block
+        txtOutput2.setText(null);
+
+        //set up the buttons
+        btn1.setText("Options");
+        btn1.setPrefWidth(70);
         btn1.setOnAction(e -> getOutputCombo2());
 
+        btn2.setText("Day");
+        btn2.setPrefWidth(70);
         btn2.setOnAction(e -> getOutputCombo1());
 
 
@@ -63,8 +72,8 @@ public class Controller implements Initializable {
         txtOutput.setText(comboBox1.getValue());
 
         if (Objects.equals(comboBox1.getValue(), week_days[1])) {
-            txtOutput2.setText("Now "+comboBox1.getValue()+" " + fruits[1]);
-        }
+            txtOutput2.setText("Now " + comboBox1.getValue() + " was selected");
+        } else txtOutput2.setText(null);
     }
 
 }

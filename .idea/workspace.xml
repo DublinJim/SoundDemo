@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecffe36b-be9e-4280-b8cf-7ae175888d9a" name="Changes" comment="both combo boxes  function">
+    <list default="true" id="ecffe36b-be9e-4280-b8cf-7ae175888d9a" name="Changes" comment="added an if to evaluate combobox selected choice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sounddemo/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sounddemo/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sounddemo/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sounddemo/hello-view.fxml" afterDir="false" />
@@ -112,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676557421645</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added an if to evaluate combobox selected choice">
+      <created>1676559321833</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676559321833</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -121,14 +128,15 @@
     <MESSAGE value="botth combo boxes working" />
     <MESSAGE value="both combo boxes  some function" />
     <MESSAGE value="both combo boxes  function" />
-    <option name="LAST_COMMIT_MESSAGE" value="both combo boxes  function" />
+    <MESSAGE value="added an if to evaluate combobox selected choice" />
+    <option name="LAST_COMMIT_MESSAGE" value="added an if to evaluate combobox selected choice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/sounddemo/Controller.java</url>
-          <line>63</line>
+          <line>73</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
