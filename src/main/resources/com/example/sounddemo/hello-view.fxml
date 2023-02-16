@@ -6,26 +6,29 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sounddemo.Controller">
+    <Button fx:id="btn1" layoutX="41.0" layoutY="40.0" mnemonicParsing="false" text="Button"/>
 
-<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sounddemo.Controller">
-   <Button fx:id="btn1" layoutX="41.0" layoutY="40.0" mnemonicParsing="false" text="Button" />
-
-   <Button fx:id="btn2" layoutX="167.0" layoutY="40.0" mnemonicParsing="false" text="Button" />
-   <VBox fx:id="vBox" layoutX="387.0" layoutY="22.0" prefHeight="350.0" prefWidth="167.0" spacing="10.0">
-      <padding>
-         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-      </padding>
+    <Button fx:id="btn2" layoutX="167.0" layoutY="40.0" mnemonicParsing="false" text="Button"/>
+    <VBox fx:id="vBox" layoutX="387.0" layoutY="22.0" prefHeight="350.0" prefWidth="167.0" spacing="10.0">
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </padding>
 
 
-   </VBox>
-   <Text fx:id="txtOutput" layoutX="85.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output" textAlignment="CENTER" wrappingWidth="430.8759765625">
-      <font>
-         <Font size="33.0" />
-      </font>
-   </Text>
-   <Text fx:id="txtOutput2" layoutX="85.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output" textAlignment="CENTER" wrappingWidth="430.8759765625">
-      <font>
-         <Font size="33.0" />
-      </font>
-   </Text>
+    </VBox>
+    <Text fx:id="txtOutput" layoutX="85.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output"
+          textAlignment="CENTER" wrappingWidth="430.8759765625">
+        <font>
+            <Font size="33.0"/>
+        </font>
+    </Text>
+    <Text fx:id="txtOutput2" layoutX="85.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output"
+          textAlignment="CENTER" wrappingWidth="430.8759765625">
+        <font>
+            <Font size="33.0"/>
+        </font>
+    </Text>
 </AnchorPane>

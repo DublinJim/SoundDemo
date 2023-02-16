@@ -34,3 +34,7 @@
 .combo-box .arrow-button:hover {
   -fx-background-color: gray;
    }
+
+.label{
+-fx-text-fill: blue;
+}
