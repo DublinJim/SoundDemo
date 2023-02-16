@@ -17,6 +17,7 @@ import java.io.File;
 import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
+
 public class Controller implements Initializable {
 
 
@@ -33,7 +34,8 @@ public class Controller implements Initializable {
     public Text txtOutput2;
     public String[] options;
     public String[] week_days;
-
+public  String soundFilePiano;
+public  String soundFileWinTada;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -63,8 +65,8 @@ public class Controller implements Initializable {
         btn2.setText("Day");
         btn2.setPrefWidth(100);
 
-        btn2.setOnAction(e->{
-            playSound();
+        btn2.setOnAction(e -> {
+            playSound(soundFilePiano);
             getOutputCombo1();
         });
 
@@ -83,9 +85,8 @@ public class Controller implements Initializable {
         vBox.getChildren().add(comboBox1);
         rootPane.getChildren().add(lbl1);
 
-
-        File wavFile = new File("piano2.wav");
-
+        soundFilePiano = "src/main/resources/piano2.wav";
+        soundFileWinTada ="src/main/resources/owin31.wav";
     }
 
 
@@ -98,14 +99,13 @@ public class Controller implements Initializable {
         txtOutput1.setText(comboBox1.getValue());
         if (Objects.equals(comboBox1.getValue(), week_days[1])) {
             txtOutput2.setText("Now " + comboBox1.getValue() + " was selected");
+            playSound(soundFileWinTada);
         } else txtOutput2.setText(null);
     }
 
-    public void playSound() {
+    public void playSound(String soundFile) {
 
-        String musicFile = "src/main/resources/piano2.wav";
-
-        Media sound = new Media(new File(musicFile).toURI().toString());
+        Media sound = new Media(new File(soundFile).toURI().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(sound);
         mediaPlayer.play();
 
