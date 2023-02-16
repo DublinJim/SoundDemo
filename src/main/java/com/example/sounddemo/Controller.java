@@ -8,13 +8,15 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
+import java.io.File;
 import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
-
 public class Controller implements Initializable {
 
 
@@ -60,7 +62,11 @@ public class Controller implements Initializable {
 
         btn2.setText("Day");
         btn2.setPrefWidth(100);
-        btn2.setOnAction(e -> getOutputCombo1());
+
+        btn2.setOnAction(e->{
+            playSound();
+            getOutputCombo1();
+        });
 
         //set a font
         Font franklin_gothic = new Font("Franklin Gothic", 15);
@@ -72,11 +78,13 @@ public class Controller implements Initializable {
         lbl1.setFont(franklin_gothic);
 
         //add to the Vbox and root
-
         vBox.setAlignment(Pos.TOP_CENTER);
         vBox.getChildren().add(comboBox2);
         vBox.getChildren().add(comboBox1);
         rootPane.getChildren().add(lbl1);
+
+
+        File wavFile = new File("piano2.wav");
 
     }
 
@@ -88,10 +96,19 @@ public class Controller implements Initializable {
 
     public void getOutputCombo1() {
         txtOutput1.setText(comboBox1.getValue());
-
         if (Objects.equals(comboBox1.getValue(), week_days[1])) {
             txtOutput2.setText("Now " + comboBox1.getValue() + " was selected");
         } else txtOutput2.setText(null);
+    }
+
+    public void playSound() {
+
+        String musicFile = "src/main/resources/piano2.wav";
+
+        Media sound = new Media(new File(musicFile).toURI().toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(sound);
+        mediaPlayer.play();
+
     }
 
 }
