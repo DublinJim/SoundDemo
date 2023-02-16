@@ -19,7 +19,12 @@
 
 
    </VBox>
-   <Text  fx:id="txtOutput" layoutX="85.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output" textAlignment="CENTER" wrappingWidth="430.8759765625">
+   <Text fx:id="txtOutput" layoutX="85.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output" textAlignment="CENTER" wrappingWidth="430.8759765625">
+      <font>
+         <Font size="33.0" />
+      </font>
+   </Text>
+   <Text fx:id="txtOutput2" layoutX="85.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output" textAlignment="CENTER" wrappingWidth="430.8759765625">
       <font>
          <Font size="33.0" />
       </font>
