@@ -24,7 +24,7 @@ public class Controller implements Initializable {
     public ComboBox<String> comboBox2;
     public VBox vBox;
     public AnchorPane rootPane;
-    public Text txtOutput;
+    public Text txtOutput1;
 
     public ComboBox<String> comboBox1;
     public Text txtOutput2;
@@ -38,7 +38,7 @@ public class Controller implements Initializable {
         options = new String[]{"Option 1", "Option 2", "Option 3"};
         week_days = new String[]{"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
 
-        // Create a combo box
+        // create a combo box
         comboBox1 = new ComboBox<>(FXCollections.observableArrayList(week_days));
         comboBox2 = new ComboBox<>(FXCollections.observableArrayList(options));
 
@@ -46,8 +46,9 @@ public class Controller implements Initializable {
         comboBox1.setPromptText("Days");
         comboBox2.setPromptText("Options");
 
-        //blank the second text block
+        //blank the text blocks
         txtOutput2.setText(null);
+        txtOutput1.setText(null);
 
         //set up the buttons
         btn1.setText("Options");
@@ -58,12 +59,16 @@ public class Controller implements Initializable {
         btn2.setPrefWidth(100);
         btn2.setOnAction(e -> getOutputCombo1());
 
+        //set a font
+        Font franklin_gothic = new Font("Franklin Gothic", 15);
+
         //create a label
         Label lbl1 = new Label("Submit Choices");
-        lbl1.setLayoutY(6);
-        lbl1.setLayoutX(80);
-        lbl1.setFont(new Font("Franklin Gothic", 20));
-        //add to the Vbox
+        lbl1.setLayoutY(10);
+        lbl1.setLayoutX(90);
+        lbl1.setFont(franklin_gothic);
+
+        //add to the Vbox and root
         vBox.getChildren().add(comboBox2);
         vBox.getChildren().add(comboBox1);
         rootPane.getChildren().add(lbl1);
@@ -73,11 +78,11 @@ public class Controller implements Initializable {
 
     public void getOutputCombo2() {
 
-        txtOutput.setText(comboBox2.getValue());
+        txtOutput1.setText(comboBox2.getValue());
     }
 
     public void getOutputCombo1() {
-        txtOutput.setText(comboBox1.getValue());
+        txtOutput1.setText(comboBox1.getValue());
 
         if (Objects.equals(comboBox1.getValue(), week_days[1])) {
             txtOutput2.setText("Now " + comboBox1.getValue() + " was selected");

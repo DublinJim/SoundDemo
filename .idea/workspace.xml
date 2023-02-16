@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecffe36b-be9e-4280-b8cf-7ae175888d9a" name="Changes" comment="added a stylesheet.css">
+    <list default="true" id="ecffe36b-be9e-4280-b8cf-7ae175888d9a" name="Changes" comment="adds inline label modifications">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sounddemo/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sounddemo/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sounddemo/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sounddemo/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676563863098</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adds inline label modifications">
+      <created>1676564698245</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676564698245</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,14 +161,15 @@
     <MESSAGE value="added an if to evaluate combobox selected choice" />
     <MESSAGE value="Documented all combo boxes working" />
     <MESSAGE value="added a stylesheet.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a stylesheet.css" />
+    <MESSAGE value="adds inline label modifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds inline label modifications" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/sounddemo/Controller.java</url>
-          <line>58</line>
+          <line>59</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
